@@ -10,13 +10,24 @@
 --foreground:#000
 }
 
-::view-transition-old(page) {
+::view-transition-old(page.forward) {
   animation: slide-out 0.6s forwards ease-in-out;
   opacity: 1 !important;
 }
 
-::view-transition-new(page) {
+::view-transition-new(page.forward) {
   animation: slide-in 0.6s forwards ease-in-out;
+  opacity: 1 !important;
+}
+
+/* Back navigation */
+::view-transition-old(page.back) {
+  animation: slide-out-reverse 0.6s forwards ease-in-out;
+  opacity: 1 !important;
+}
+
+::view-transition-new(page.back) {
+  animation: slide-in-reverse 0.6s forwards ease-in-out;
   opacity: 1 !important;
 }
 

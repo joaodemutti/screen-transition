@@ -9,6 +9,7 @@ export default function Teste(){
                 <Link href="/teste/1">
                     Teste 1
                 </Link>
+                <Link href="/teste/2">Teste 2</Link>
             </main>
     )
 }
